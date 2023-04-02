@@ -1,39 +1,91 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "Which of the following is the goal of the A* algorithm?",
+        "answers": {
+          "a": "To find the shortest path between two points in a graph",
+          "b": "To find the longest path between two points in a graph",
+          "c": "To find all possible paths between two points in a graph",
+          "d": "To find the minimum spanning tree of a graph"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "What is the heuristic function used in the A* algorithm?",
+        "answers": {
+          "a": "Euclidean distance",
+          "b": "Manhattan distance",
+          "c": "Hamming distance",
+          "d": "Both a) and b)"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "What is the significance of the A* algorithm's f-score?",
+        "answers": {
+          "a": "It is the total cost of the path from the start node to the goal node.",
+          "b": "It is the heuristic estimate of the remaining cost from the current node to the goal node.",
+          "c": "It is the sum of the g-score and h-score of a node.",
+          "d": "It is the depth of a node in the search tree."
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "Which data structure is used to store the open set in the A* algorithm?",
+        "answers": {
+            "a": "A priority queue",
+            "b": "A stack",
+            "c": "A queue",
+            "d": "A linked list"
+            },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "Which of the following is a drawback of the A* algorithm?",
+        "answers": {
+          "a": "It always finds the shortest path between two points.",
+          "b": "It can get stuck in local optima.",
+          "c": "It is not suitable for large graphs",
+          "d": "It does not use a heuristic function."
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  
