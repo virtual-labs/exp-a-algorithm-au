@@ -1,39 +1,91 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "What is Astar Algorithm use for?",
+        "answers": {
+          "a": " Sorting arrays",
+          "b": "Pathfinding",
+          "c": "Image recognition",
+          "d": "Speech synthesis"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "Which data structure is typically used to implement the open set in the A* algorithm?",
+        "answers": {
+          "a": "Stack",
+          "b": "Queue",
+          "c": "Heap",
+          "d": "Linked list"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "question": "Which of the following is NOT a component of the A* algorithm's heuristic function?",
+        "answers": {
+          "a": "The cost to reach the current node",
+          "b": "The estimated cost to reach the goal from the current node",
+          "c": " The estimated distance to the goal from the current node",
+          "d": "The total cost of the path from the start node to the current node"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "question": "Which of the following is a drawback of the A* algorithm?",
+        "answers": {
+          "a": "It always finds the optimal path",
+          "b": "It may take a long time to find the optimal path",
+          "c": "It only works for small graphs",
+          "d": "It cannot handle graphs with negative edge weights"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "Which of the following is a modification of the A* algorithm that guarantees finding the shortest path in a graph with non-negative edge weights?",
+        "answers": {
+          "a": "Dijkstra's algorithm",
+          "b": "Bellman-Ford algorithm",
+          "c": "Floyd-Warshall algorithm",
+          "d": "Johnson's algorithm"
+        },
+        "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
+      }
+    ]
+  }
+  
