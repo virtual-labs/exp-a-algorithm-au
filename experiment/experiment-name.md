@@ -1,1 +1,1 @@
-## Perform and visualize search using A* algorithm 
+## Perform and visualize A* Search
