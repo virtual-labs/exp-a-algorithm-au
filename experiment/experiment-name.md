@@ -1,1 +1,2 @@
-## Perform and visualize Astar Search
+## Perform and visualize A* Search
+

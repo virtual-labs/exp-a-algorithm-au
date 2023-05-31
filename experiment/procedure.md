@@ -1,20 +1,19 @@
 # Procedure
-A* Search algorithm is one of the best and popular techniques used in path-finding and graph traversals.It is a searching algorithm that is used to find the shortest path between an initial and a final point.
-The A* Search Algorithm also uses a heuristic function that provides additional information regarding how far away from the goal node we are.
 
 ## Create the Graph and set the search parameters:
-    Select creating graph manual/random
-    Enter Source Node and Destination Node
-    Initiate Search on Graph
-## Generate solution:
-    Visualize the steps 
-    Visualize the path from selecting a starting point on the graph and then following a the heuristic function
-    Iterations can be animated; paths can be highlighted.
-    The result will be a path which displays the end of the search.
+step1:Enter no of nodes and no of links \
+Step2:Select from custom or random options to create graph \
+Step3:Enter Source Node and Destination Node \
+Step4:Click on Find path to start the search 
 
-## Evaluate :
-    Define following:	
-    Path and algorithm iterations
+Custom graph can also be created if you select custom graph option 
+
+## Generate solution:
+Visualize the steps 
+Visualize the path from selecting a starting point on the graph and then following a the heuristic function
+Iterations can be animated; paths can be highlighted.
+The result will be a path which displays the end of the search.
+
 ## Algorithm
 
 ### Step-01:
