@@ -36,3 +36,5 @@ If the node has not been in either list, add it to OPEN.
  
 Step-07:\
 Go back to Step-02.
+
+![image_of_simulation](../Screenshot_2.png)
