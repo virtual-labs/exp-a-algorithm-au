@@ -7,6 +7,8 @@ Step3:Enter Source Node and Destination Node \
 Step4:Click on Find path to start the search 
 
 Custom graph can also be created if you select custom graph option 
+To modify node labels, heuristic values, and the cost of a path,
+you may utilize the interactive feature by selecting the specific node and entering the desired values. 
 
 ## Generate solution:
 Visualize the steps 
@@ -14,36 +16,7 @@ Visualize the path from selecting a starting point on the graph and then followi
 Iterations can be animated; paths can be highlighted.
 The result will be a path which displays the end of the search.
 
-## Algorithm
+## Evaluate :
+Define following:	
+Path and algorithm iterations
 
-### Step-01:
- 
-    Define a list OPEN.
-    Initially, OPEN consists solely of a single node, the start node S.
- 
-### Step-02:
- 
-    If the list is empty, return failure and exit.
- 
-### Step-03:
- 
-    Remove node n with the smallest value of f(n) from OPEN and move it to list CLOSED.
-    If node n is a goal state, return success and exit.
- 
-### Step-04:
-
-    Expand node n.
- 
-### Step-05:
- 
-    If any successor to n is the goal node, return success and the solution by tracing the path from the goal node to S.
-    Otherwise, go to Step-06.
- 
-### Step-06:
- 
-    For each successor node,
-    Apply the evaluation function f to the node.
-    If the node has not been in either list, add it to OPEN.
- 
-### Step-07:
-    Go back to Step-02.
