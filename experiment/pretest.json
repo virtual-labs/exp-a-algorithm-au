@@ -9,7 +9,12 @@
           "c": "To find all possible paths between two points in a graph",
           "d": "To find the minimum spanning tree of a graph"
         },
-     
+       "explanations": {
+          "a": "Explanation 1  <a href='www.google.com'>here</a>",
+          "b": "Explanation 2",
+          "c": "Explanation 2",
+          "d": "Explanation 2"
+        },
         "correctAnswer": "a",
         "difficulty": "beginner"
       },
