@@ -45,14 +45,13 @@ far away from the goal node we are.
             </ul>
             </ol>
 <p>For example:</P>
-<ul>
-  <li>Step - 1 Enter the number of nodes and number of links, then click on "Generate Random graph"
-  <img src="./images/step1.png" alt="A* Search Algorithm Visualization"></li>
-  <li>Step - 2 Enter Source node and Destination node
-  <img src="./images/step2.png" alt="A* Search Algorithm Visualization"></li>
-  <li>Step - 3 Observe the operation. If the OPEN list is empty, the algorithm fails to find a solution and exits.
-  <img src="./images/step3.png" alt="A* Search Algorithm Visualization"></li>
-  <li>Step - 4 Final output is displayed
+
+  <p>Step - 1 Enter the number of nodes and number of links, then click on "Generate Random graph"</p>
+  <img src="./images/step1.png" alt="A* Search Algorithm Visualization">
+  <p>Step - 2 Enter Source node and Destination node</p>
+  <img src="./images/step2.png" alt="A* Search Algorithm Visualization">
+  <p>Step - 3 Observe the operation. If the OPEN list is empty, the algorithm fails to find a solution and exits.</p>
+  <img src="./images/step3.png" alt="A* Search Algorithm Visualization">
+  <p>Step - 4 Final output is displayed</p>
   <img src="./images/step4.png" alt="A* Search Algorithm Visualization">
-  </li>
-</ul>
+
