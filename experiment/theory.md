@@ -1,4 +1,4 @@
-# Theory
+### Theory
 
 A* Search algorithm is one of the best and popular techniques used in path-finding and graph traversals.
 It is a searching algorithm that is used to find the shortest path between an initial and a final point.
