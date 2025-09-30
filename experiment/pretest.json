@@ -2,37 +2,173 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the main purpose of the A* algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Sorting arrays",
+        "b": "Pathfinding in graphs",
+        "c": "Image processing",
+        "d": "Encrypting data"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Sorting is unrelated to A*.",
+        "b": "Correct. A* is mainly used in pathfinding and graph traversal.",
+        "c": "Incorrect. A* is not used in image processing directly.",
+        "d": "Incorrect. A* does not deal with encryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the heuristic function h(n) represent in A*?",
+      "answers": {
+        "a": "Cost from start to current node",
+        "b": "Estimated cost from current node to goal",
+        "c": "Total path cost",
+        "d": "Number of nodes visited"
+      },
+      "explanations": {
+        "a": "Incorrect. That is g(n).",
+        "b": "Correct. h(n) estimates cost from current node to goal.",
+        "c": "Incorrect. That is f(n).",
+        "d": "Incorrect. Node count is not heuristic."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which heuristics can be used in A*?",
+      "answers": {
+        "a": "Euclidean distance",
+        "b": "Manhattan distance",
+        "c": "Both a and b",
+        "d": "None of these"
+      },
+      "explanations": {
+        "a": "Partially correct but not complete.",
+        "b": "Partially correct but not complete.",
+        "c": "Correct. Both Euclidean and Manhattan distances are common heuristics.",
+        "d": "Incorrect. Heuristics are essential in A*."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does g(n) represent in A*?",
+      "answers": {
+        "a": "The estimated cost to the goal",
+        "b": "The total cost of the path",
+        "c": "The cost from the start node to the current node",
+        "d": "The depth of the node"
+      },
+      "explanations": {
+        "a": "Incorrect. That is h(n).",
+        "b": "Incorrect. That is f(n).",
+        "c": "Correct. g(n) is cost from start to current node.",
+        "d": "Incorrect. Depth is not g(n)."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What data structure is commonly used for the OPEN list in A*?",
+      "answers": {
+        "a": "Stack",
+        "b": "Queue",
+        "c": "Priority Queue (Min-Heap)",
+        "d": "Linked List"
+      },
+      "explanations": {
+        "a": "Incorrect. Stack is LIFO.",
+        "b": "Incorrect. Queue is FIFO.",
+        "c": "Correct. Priority queue ensures lowest f(n) is expanded first.",
+        "d": "Incorrect. Linked list is not efficient here."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If h(n) = 0 for all nodes, A* becomes:",
+      "answers": {
+        "a": "Greedy Best First Search",
+        "b": "Dijkstra’s Algorithm",
+        "c": "Breadth First Search",
+        "d": "Depth First Search"
+      },
+      "explanations": {
+        "a": "Incorrect. Greedy uses only h(n).",
+        "b": "Correct. A* reduces to Dijkstra’s when h(n) = 0.",
+        "c": "Incorrect. BFS is different.",
+        "d": "Incorrect. DFS is uninformed search."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following ensures A* finds the optimal path?",
+      "answers": {
+        "a": "Heuristic is admissible",
+        "b": "Heuristic is random",
+        "c": "Graph is unweighted",
+        "d": "Graph is directed"
+      },
+      "explanations": {
+        "a": "Correct. Admissible heuristics never overestimate cost.",
+        "b": "Incorrect. Random heuristics may fail.",
+        "c": "Incorrect. Weight does not ensure optimality.",
+        "d": "Incorrect. Direction is not related."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is a drawback of A*?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It cannot find shortest path",
+        "b": "It may consume large memory for big graphs",
+        "c": "It ignores heuristics",
+        "d": "It only works on trees"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. A* can find shortest path.",
+        "b": "Correct. Memory and time are drawbacks on large graphs.",
+        "c": "Incorrect. A* always uses heuristics.",
+        "d": "Incorrect. A* works on graphs too."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which part of the f(n) function represents heuristic estimate?",
+      "answers": {
+        "a": "g(n)",
+        "b": "h(n)",
+        "c": "f(n)",
+        "d": "Both g(n) and h(n)"
+      },
+      "explanations": {
+        "a": "Incorrect. g(n) is actual cost so far.",
+        "b": "Correct. h(n) is heuristic estimate.",
+        "c": "Incorrect. f(n) is combined cost.",
+        "d": "Incorrect. Only h(n) is heuristic."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What kind of search is A* considered as?",
+      "answers": {
+        "a": "Uninformed search",
+        "b": "Informed search",
+        "c": "Blind search",
+        "d": "Random search"
+      },
+      "explanations": {
+        "a": "Incorrect. A* uses heuristics.",
+        "b": "Correct. A* is informed because it uses heuristics.",
+        "c": "Incorrect. Blind search means no heuristic.",
+        "d": "Incorrect. A* is systematic, not random."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

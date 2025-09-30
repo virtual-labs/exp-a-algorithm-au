@@ -1,1 +1,1 @@
-## Experiment name
+## Perform and visualize A* Search

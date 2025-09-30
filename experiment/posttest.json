@@ -2,37 +2,173 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What makes A* different from Dijkstra’s algorithm?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A* only works on unweighted graphs",
+        "b": "A* uses a heuristic to guide the search",
+        "c": "A* does not guarantee shortest path",
+        "d": "A* ignores actual path cost"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. A* works on weighted graphs.",
+        "b": "Correct. Heuristic guidance is what makes A* unique.",
+        "c": "Incorrect. A* guarantees shortest path if heuristic is admissible.",
+        "d": "Incorrect. A* combines both actual and heuristic cost."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What condition ensures A* finds the optimal path?",
+      "answers": {
+        "a": "Heuristic is admissible (never overestimates)",
+        "b": "Heuristic is always zero",
+        "c": "Graph has no cycles",
+        "d": "Graph is unweighted"
+      },
+      "explanations": {
+        "a": "Correct. Admissible heuristic ensures optimality.",
+        "b": "Incorrect. Zero heuristic reduces A* to Dijkstra’s.",
+        "c": "Incorrect. Cycles don’t prevent optimality.",
+        "d": "Incorrect. Weighting is allowed."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following is a drawback of A*?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "It always fails on large graphs",
+        "b": "It may take high memory and time",
+        "c": "It cannot handle positive edge weights",
+        "d": "It ignores heuristics"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. It may still succeed but slower.",
+        "b": "Correct. A* can be expensive for large problems.",
+        "c": "Incorrect. A* works on positive weights.",
+        "d": "Incorrect. A* depends on heuristics."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "If h(n) = 0 for all nodes, A* becomes:",
+      "answers": {
+        "a": "Greedy Best First Search",
+        "b": "Breadth First Search",
+        "c": "Dijkstra’s Algorithm",
+        "d": "Depth First Search"
+      },
+      "explanations": {
+        "a": "Incorrect. Greedy uses only h(n).",
+        "b": "Incorrect. BFS uses levels not costs.",
+        "c": "Correct. With h(n)=0, A* is same as Dijkstra’s.",
+        "d": "Incorrect. DFS does not use costs."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which type of heuristic makes A* efficient and optimal?",
+      "answers": {
+        "a": "Overestimating heuristic",
+        "b": "Admissible heuristic",
+        "c": "Random heuristic",
+        "d": "Non-monotonic heuristic"
+      },
+      "explanations": {
+        "a": "Incorrect. Overestimation breaks optimality.",
+        "b": "Correct. Admissible heuristic never overestimates cost.",
+        "c": "Incorrect. Random gives poor results.",
+        "d": "Incorrect. Non-monotonic is not efficient."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which data structure is typically used to implement the OPEN list?",
+      "answers": {
+        "a": "Stack",
+        "b": "Queue",
+        "c": "Priority Queue (Min-Heap)",
+        "d": "Hash Table"
+      },
+      "explanations": {
+        "a": "Incorrect. Stack is LIFO.",
+        "b": "Incorrect. Queue is FIFO.",
+        "c": "Correct. Priority Queue is used to get node with least f(n).",
+        "d": "Incorrect. Hash table not used here."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In pathfinding on a grid, Manhattan distance is best used when:",
+      "answers": {
+        "a": "Diagonal moves are allowed",
+        "b": "Only horizontal and vertical moves are allowed",
+        "c": "Graph is weighted",
+        "d": "Graph is unweighted"
+      },
+      "explanations": {
+        "a": "Incorrect. Diagonal moves suit Euclidean.",
+        "b": "Correct. Manhattan is for up, down, left, right moves.",
+        "c": "Incorrect. Weighting is independent of heuristic type.",
+        "d": "Incorrect. Weight does not decide heuristic."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the formula used in A* search?",
+      "answers": {
+        "a": "f(n) = g(n) + h(n)",
+        "b": "f(n) = g(n) - h(n)",
+        "c": "f(n) = g(n) * h(n)",
+        "d": "f(n) = h(n) - g(n)"
+      },
+      "explanations": {
+        "a": "Correct. A* uses f(n) = g(n) + h(n).",
+        "b": "Incorrect. Subtraction is not used.",
+        "c": "Incorrect. Multiplication is not used.",
+        "d": "Incorrect. Wrong relation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is an application of A*?",
+      "answers": {
+        "a": "Sorting numbers",
+        "b": "Pathfinding in GPS systems",
+        "c": "Data compression",
+        "d": "Text translation"
+      },
+      "explanations": {
+        "a": "Incorrect. Sorting is unrelated.",
+        "b": "Correct. A* is widely used in GPS navigation.",
+        "c": "Incorrect. Compression is unrelated.",
+        "d": "Incorrect. Translation is NLP related."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which part of the evaluation function ensures real path cost?",
+      "answers": {
+        "a": "f(n)",
+        "b": "g(n)",
+        "c": "h(n)",
+        "d": "Both g(n) and h(n)"
+      },
+      "explanations": {
+        "a": "Incorrect. f(n) is combined.",
+        "b": "Correct. g(n) is actual cost.",
+        "c": "Incorrect. h(n) is only estimate.",
+        "d": "Incorrect. Only g(n) is real path cost."
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
